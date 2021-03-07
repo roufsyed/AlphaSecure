@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_ud"
+    android:background="#EBEBEB"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/loginicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_login"/>
+
+        <RelativeLayout
+            android:id="@+id/entries_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/loginicon">
+
+            <EditText
+                android:id="@+id/login_ud_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Login"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/primary_dark_blue"/>
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_ud_title_et"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:layout_marginTop="20dp"
+                android:text="username"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_ud_username_et"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_tv"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:layout_alignParentEnd="true"
+                android:hint="username" />
+
+            <TextView
+                android:id="@+id/password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_ud_username_et"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:layout_marginTop="20dp"
+                android:text="password"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_ud_password_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:hint="password"
+                android:inputType="textPassword"/>
+
+            <LinearLayout
+                android:id="@+id/checkboxes_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_ud_password_et"
+                android:layout_alignStart="@id/login_ud_password_et">
+
+                <CheckBox
+                    android:id="@+id/show_password_cb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Show Password"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/website_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkboxes_ll"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:layout_marginTop="20dp"
+                android:text="website"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_ud_website_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/website_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:hint="website" />
+
+            <TextView
+                android:id="@+id/notes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_ud_website_et"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:layout_marginTop="20dp"
+                android:text="notes"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/login_ud_notes_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notes_tv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@id/login_ud_title_et"
+                android:hint="notes" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

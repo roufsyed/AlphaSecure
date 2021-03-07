@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bank_de"
+    android:background="#EBEBEB"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bankimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_bank" />
+
+    <RelativeLayout
+        android:id="@+id/entries_rl"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bankimage"
+        android:paddingLeft="20dp">
+
+        <EditText
+            android:id="@+id/bank_title_et"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/emailicon"
+            android:backgroundTint="@color/primary_dark_blue"
+            android:text="Bank"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bank_name_of_the_bank_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_title_et"
+            android:layout_marginTop="20dp"
+            android:text="Bank Name"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_name_of_the_bank_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_name_of_the_bank_tv"
+            android:layout_alignParentEnd="true"
+            android:hint="Bank Name" />
+
+        <TextView
+            android:id="@+id/nameonaccount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_name_of_the_bank_et"
+            android:layout_alignLeft="@id/bank_name_of_the_bank_et"
+            android:layout_marginTop="20dp"
+            android:text="Name on Account"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_name_on_account_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameonaccount_tv"
+            android:layout_alignLeft="@+id/nameonaccount_tv"
+            android:layout_alignParentEnd="true"
+            android:hint="Name on Account" />
+
+        <TextView
+            android:id="@+id/accountnumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_name_on_account_et"
+            android:layout_alignStart="@id/bank_name_on_account_et"
+            android:layout_marginTop="20dp"
+            android:text="Account Number"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_account_number_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountnumber_tv"
+            android:layout_alignLeft="@id/accountnumber_tv"
+            android:layout_alignParentEnd="true"
+            android:hint="Account Number" />
+
+        <TextView
+            android:id="@+id/pin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_account_number_et"
+            android:layout_alignLeft="@id/bank_account_number_et"
+            android:layout_marginTop="20dp"
+            android:text="Pin"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_pin_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pin_tv"
+            android:layout_alignLeft="@+id/pin_tv"
+            android:layout_alignParentEnd="true"
+            android:hint="Pin"
+            android:inputType="numberPassword" />
+
+        <LinearLayout
+            android:id="@+id/checkboxes_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bank_pin_et"
+            android:layout_alignStart="@id/bank_pin_et">
+
+            <CheckBox
+                android:id="@+id/show_password_cb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Show Password"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkboxes_ll"
+            android:layout_alignLeft="@id/checkboxes_ll"
+            android:layout_marginTop="20dp"
+            android:text="Phone"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_phone_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_tv"
+            android:layout_alignLeft="@id/phone_tv"
+            android:layout_alignParentEnd="true"
+            android:hint="Phone"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_phone_et"
+            android:layout_alignLeft="@id/bank_pin_et"
+            android:layout_marginTop="20dp"
+            android:text="Address"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_address_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_tv"
+            android:layout_alignLeft="@id/address_tv"
+            android:layout_alignParentEnd="true"
+            android:hint="Address" />
+
+        <TextView
+            android:id="@+id/notes_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bank_address_et"
+            android:layout_alignLeft="@id/bank_pin_et"
+            android:layout_marginTop="20dp"
+            android:text="notes"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bank_notes_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notes_tv"
+            android:layout_alignLeft="@id/notes_tv"
+            android:layout_alignParentEnd="true"
+            android:hint="notes" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="color">
+        <item name="android:layout_width">84dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginStart">267dp</item>
+        <item name="android:layout_marginTop">253dp</item>
+        <item name="android:layout_marginRight">88dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="BottomSheetDialogtheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

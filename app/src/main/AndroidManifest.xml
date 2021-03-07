@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alphasecure">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_key3"
+        android:label="AlphaSecure"
+        android:roundIcon="@drawable/ic_key3"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlphaSecure">
+        <activity
+            android:name=".settings"
+            android:label=""
+            android:parentActivityName=".homescreen"/>
+
+
+        <activity
+            android:name=".app_login"
+            android:theme="@style/Theme.AlphaSecure.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".homescreen"
+            android:icon="@drawable/alphasecure_ic"
+            android:label="  Categories" />
+        <activity
+            android:name=".login"
+            android:label="Login"
+            android:parentActivityName=".homescreen" />
+        <activity
+            android:name=".login_de"
+            android:label=""
+            android:parentActivityName=".login" />
+        <activity
+            android:name=".login_ud"
+            android:label=""
+            android:parentActivityName=".login" />
+        <activity
+            android:name=".email"
+            android:label="Email"
+            android:parentActivityName=".homescreen" />
+        <activity
+            android:name=".email_de"
+            android:label=""
+            android:parentActivityName=".email" />
+        <activity
+            android:name=".email_ud"
+            android:label=""
+            android:parentActivityName=".email" />
+        <activity
+            android:name=".bank"
+            android:label="Bank"
+            android:parentActivityName=".homescreen" />
+        <activity
+            android:name=".bank_de"
+            android:label=""
+            android:parentActivityName=".bank" />
+        <activity
+            android:name=".bank_ud"
+            android:label=""
+            android:parentActivityName=".bank" />
+        <activity
+            android:name=".notes"
+            android:label="Notes"
+            android:parentActivityName=".homescreen" />
+        <activity
+            android:name=".notes_de"
+            android:label="Notes"
+            android:parentActivityName=".notes" />
+        <activity
+            android:name=".notes_ud"
+            android:label=""
+            android:parentActivityName=".notes" />
+    </application>
+
+</manifest>
