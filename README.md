@@ -1,5 +1,3 @@
-![bank](https://user-images.githubusercontent.com/51513765/115528741-f1860200-a2af-11eb-850c-efd4dd3bf4d3.png)
-![bank](https://user-images.githubusercontent.com/51513765/115528781-f9de3d00-a2af-11eb-8e8e-e15c8d6ce1a5.png)
 # AlphaSecure
 It's an encrypted credential and notes application(android). 
 
