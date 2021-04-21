@@ -1,2 +1,3 @@
 # AlphaSecure
-A complete Encrypted solution for Credentials and Notes managing.
+It's an encrypted credential and notes application(android). 
+
