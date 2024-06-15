@@ -3,13 +3,21 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        key {
+            storeFile file('/home/rouf/keys/key.jks')
+            storePassword 'asdqwe123'
+            keyAlias 'asdqwe123'
+            keyPassword 'asdqwe123'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
     defaultConfig {
         applicationId "com.example.alphasecure"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

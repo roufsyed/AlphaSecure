@@ -19,6 +19,7 @@
 
         <activity
             android:name=".app_login"
+            android:exported="true"
             android:theme="@style/Theme.AlphaSecure.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
